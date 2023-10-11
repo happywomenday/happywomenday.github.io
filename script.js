@@ -139,8 +139,8 @@ dateFuture.setSeconds(dateFuture.getSeconds() + 6);
       year: function(className) {
         var timeline = new TimelineMax();
         var year = animation.element(animation.newYear, "div", className);
-        for (var i=0; i<="8-3-".concat(String(animation.period.year)).length-1; i++) {
-          var digit = animation.element(year, "div", "digit", ("8-3-".concat(String(animation.period.year))).substr(i, 1));
+        for (var i=0; i<="20-10-".concat(String(animation.period.year)).length-1; i++) {
+          var digit = animation.element(year, "div", "digit", ("20-10-".concat(String(animation.period.year))).substr(i, 1));
           digit.style.top = (0 - (digit.clientHeight * 2)) + "px";
           timeline
             .to(digit, 0.5, {top: 0, opacity: 1, ease: Bounce.easeOut});
